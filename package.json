@@ -1,0 +1,27 @@
+{
+  "name": "integration-pipeline-challenge",
+  "version": "1.0.0",
+  "description": "Simple web app with a focus on continuous integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKarakhanyan/integration-pipeline-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AKarakhanyan/integration-pipeline-challenge/issues"
+  },
+  "homepage": "https://github.com/AKarakhanyan/integration-pipeline-challenge#readme",
+  "dependencies": {
+    "aws-sdk": "^2.761.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-uuid": "^1.4.8",
+    "serverless-http": "^2.6.0"
+  }
+}
