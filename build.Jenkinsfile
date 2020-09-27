@@ -13,7 +13,6 @@ pipeline {
     tools {
         nodejs 'Node 12'
     }
-    options([parameters([string(defaultValue: 'master', description: '', name: 'BRANCH', trim: false)])])
     stages {
         stage('Build') {
             steps {
