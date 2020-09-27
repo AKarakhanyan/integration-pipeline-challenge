@@ -10,11 +10,19 @@ void setBuildStatus(String message, String state) {
 
 pipeline {
     agent any
+    tools {
+        nodejs 'Node 12'
+    }
     stages {
         stage('Build') {
             steps {
                 setBuildStatus("Build started", "PENDING");
-                sh 'echo "hello world"'
+                sh 'npm i'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm test'
             }
         }
     }
