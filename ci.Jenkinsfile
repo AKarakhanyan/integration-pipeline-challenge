@@ -19,7 +19,7 @@ pipeline {
                 setBuildStatus("Build started", "PENDING");
                 sh 'npm i'
             }
-        },
+        }
         stage('Test') {
             steps {
                 sh 'npm test'
